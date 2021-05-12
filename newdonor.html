@@ -1,0 +1,101 @@
+<?php
+
+include("newd.php");
+
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="newdonor.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+	<script src="jquery-3.5.1.min.js"></script>
+	<script src="blood-donation.js"></script>
+	<title>Blood donor registraion</title>
+</head>
+<body>
+	<header>
+		<p id="p1">Donate Blood , Donate life!</p>
+	</header>
+	<div class="container">
+		<form action="newd.php" method="POST">
+			<h2>Personal Details</h2><br>
+			<label>Full Name</label>
+			<input type="text" name="fullname" placeholder="Enter your name" required>
+			<label id="g">Gender</label>
+			<select name="gender" required>
+				<option value="">Select Gender</option>
+				<option value="male">Male</option>
+				<option value="female">Female</option>
+				<option value="other">Other</option>
+			</select>
+			<br>
+			<label>Date Of Birth</label>
+			<input type="Date" name="dob" required>
+			<label id="an">Aadhar Number</label>
+			<input type="text" name="ano" placeholder="Enter 12-digit aadhar no." required><br>
+			<h2>Contact Details</h2><br>
+			<label>Mobile Number</label>
+			<input type="numeric" name="mno" placeholder="enter no. with country code" required>
+			<label id="ei">Email Id</label>
+			<input type="text" name="eid" placeholder="this@this.com" required>
+			<h2>Location</h2>
+			<label id="p2">Country</label>
+			<select name="country" class="countries" id="country">
+				<option value="">Select Country</option>
+			</select>
+			<label id="p3">State</label>
+			<select name="state" class="states" id="state">
+				<option value="">Select State</option>
+			</select>
+			<label id="p4">City</label>
+			<select name="city" class="cities" id="city">
+				<option value="">Select City</option>
+			</select>
+			<h2>Donor specific information</h2>
+			<label id="bg">Blood Group</label>
+			<select name="bloodgroup" required>
+				<option>Select</option>
+				<option>A+</option>
+				<option>A-</option>
+				<option>B+</option>
+				<option>B-</option>
+				<option>O+</option>
+				<option>O-</option>
+				<option>AB+</option>
+				<option>AB-</option>
+			</select>
+			<label id="don">Last date of donation</label>
+			<input type="date" name="ldd"></br>
+			<label id="avl">Available for donation</label>
+			<select name="afd">
+				<option value="">Select</option>
+				<option value="at">Anytime</option>
+				<option value="dh">Only in day hours</option>
+				<option value="nh">Only in night hours</option>
+			</select>
+			<br>
+			<h3>Are you a DIABETES patient?</h3>
+			Yes<input type="radio" name="diabetes" value="yes" required>
+			No<input type="radio" name="diabetes" value="no">
+			<br>
+			<h1>For Women Donors</h1>
+			<h3>Are you pregnant</h3>
+			Yes<input type="radio" name="pregnant" value="yes" required>
+			No<input type="radio" name="pregnant" value="no">
+			<br>
+			<h3>Have you had an abortion in last 3 months?</h3>
+			Yes<input type="radio" name="abortion" value="yes" required>
+			No<input type="radio" name="abortion" value="no">
+			<br>
+			<h3>Do you have a child less than 1 year old?</h3>
+			Yes<input type="radio" name="child" value="yes" required>
+			No<input type="radio" name="child" value="no"><br>
+
+			<input type="submit" value="Register" id="button">
+		</form>
+		
+	</div>
+</body>
+</html>

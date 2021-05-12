@@ -1,0 +1,93 @@
+header{
+	text-align: center;
+	background-color: rgb(252, 94, 94);
+	margin: 0px;
+	padding: 0px;
+	height: 60px;
+}
+@keyframes blink{
+	50%{
+		opacity: 0;
+	}
+}
+#p1{
+	font-size: 40px;
+	margin: auto;
+	padding-top: 5px;
+	animation: blink 2s linear infinite;
+	font-family: 'Courgette', cursive;
+}
+body{
+	background-color: #ffdcb8;
+}
+form{
+	height: 920px;
+	width: 800px;
+	margin: auto;
+	padding: 10px;
+	position: relative;
+	border: black double 5px;
+}
+h1{
+	text-align: center;
+	font-weight: bold;
+	position: relative;
+}
+h4{
+	margin-bottom: 5px;
+	padding: 0px;
+}
+label{
+	margin: 2px;
+	padding: 4px;
+	width: 120px;
+	display: inline-block;
+	font-size: 20px;
+}
+input, select{
+	border:2px solid;
+	font-size: 16px;
+}
+#g{
+	margin-left: 8px;
+}
+#an{
+	margin-left: 40px;
+}
+#ei{
+	margin-left: 6px;
+}
+#p2{
+	width: 50px;
+	margin-right: 10px;
+}
+#p3, #p4{
+	margin-left: 50px;
+	width: 30px;
+}
+#don, #avl, #bg{
+	width: 150px;
+	display: initial;
+}
+#don{
+	margin-left: 70px;
+	margin-right: 30px;
+}
+form #button{
+	font-size: 23px;
+	margin-left: 380px;
+	margin-top: 30px;
+	margin-bottom: 40px;
+	border:2px solid;
+	background-color: red;
+	color: white;
+	border-color: black;
+	
+}
+a{
+	color: white;
+	font-weight: bold;
+}
+h2{
+	text-decoration: underline;
+}

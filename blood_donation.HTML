@@ -1,0 +1,58 @@
+<?php
+	include("fetchdata.php");
+?>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="blood_donation.css">
+	<script src="jquery-3.5.1.min.js"></script>
+	<script src="blood-donation.js"></script>
+	<title>
+		Blood Donation Site
+	</title>
+</head>
+<body>
+	<header>
+		<h1>WELCOME TO ONLINE BLOOD DONATION SITE</h1>
+	</header>
+	<div class="container">
+		
+		<form action="fetchdata.php" method="GET">
+			<div id="main">
+
+				<p id="p1">Blood Group</p>
+				<select id="blood_group" name="bloodgroup" required>
+					<option></option>
+					<option>A+</option>
+					<option>A-</option>
+					<option>B+</option>
+					<option>B-</option>
+					<option>O+</option>
+					<option>O-</option>
+					<option>AB+</option>
+					<option>AB-</option>
+				</select>
+				<p id="p2">Country</p>
+				<select name="country" class="countries" id="country">
+					<option value="">Select Country</option>
+				</select>
+				<p id="p3">State</p>
+				<select name="state" class="states" id="state">
+					<option value="">Select State</option>
+				</select>
+				<p id="p3">City</p>
+				<select name="city" class="cities" id="city">
+					<option value="">Select City</option>
+				</select>
+				<br>
+				<input type="submit" value="Submit" id="button">
+			</div>
+		</form>
+		<p id="p4">To register as a DONOR <a href="newdonor.html">Click here</a></p>
+	</div>
+
+</body>
+</html>
